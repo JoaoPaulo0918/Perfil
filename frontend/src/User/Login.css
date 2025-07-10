@@ -1,0 +1,66 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+    height: 25rem;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    border: none;
+    border-radius: 13px;
+    box-shadow: 1px 1px 18px 5px #5e5d5d;
+    gap: 10px;
+}
+
+.container-fluid {
+    margin-top: 10rem !important;
+    border: none;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 5%;
+}
+
+.div-input{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.input {
+    width: 100%;
+    height: 2.8rem;
+    border: 0;
+    outline: 0;
+    border-radius: 11px;
+    font-size: 18px;
+    background-color: #e4e4e4;
+    color: #3d3d3d;
+}
+
+.div-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-buttons .button-acessar {
+    background-color: #5e5d5d;
+    height: 2.5rem;
+    border-radius: 7px;
+    border: none;
+    width: 7rem;
+    transition: .5s;
+}
+
+.div-buttons .button-acessar:hover{
+    background-color: #797979;
+}

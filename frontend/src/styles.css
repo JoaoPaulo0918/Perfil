@@ -1,0 +1,90 @@
+/* Estilo geral*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #241313;
+    height: 100dvh;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.navbar-expand-lg{
+    top: 0 !important;
+    background-color: #3d3d3d;
+    width: 100%;
+    padding: 10px 4% !important;
+    position: fixed !important;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link, .navbar-brand{
+    color: #ffff !important;
+}
+
+.logo{
+  margin-right: -15px;
+  margin-top: -4px;
+}
+
+
+/*Estilo formulário*/
+
+section.formulario{
+    padding: 20px 4%;
+    margin-top: 120px;
+    
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+form input, textarea{
+    width: 60%;
+    border: 0;
+    outline: 0;
+    padding: 12px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: #e4e4e4;
+    color: #3d3d3d;
+}
+
+.div-informacoes{
+    display: flex;
+    width: 60%;
+    gap: 10px;
+}
+
+.btn-enviar{
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn-enviar .submit{
+    width: 120px;
+    background-color: #3d3d3d;
+    color: #ffff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.submit:hover{
+    box-shadow: 0px 0px 8px #555555;
+    transform: scale(1.05);
+}
+
