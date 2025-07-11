@@ -112,7 +112,6 @@ function Perfil() {
                             </div>
                             <div className="modal-body">
                                 <input className="form-control mb-2" type="text" name="nome" value={formEdicao.nome} onChange={handleChange} />
-                                <input className="form-control mb-2" type="email" name="email" value={formEdicao.email} onChange={handleChange} />
                                 <input className="form-control mb-2" type="number" name="idade" value={formEdicao.idade} onChange={handleChange} />
                                 <input className="form-control mb-2" type="text" name="estado" value={formEdicao.estado} onChange={handleChange} />
                                 <input className="form-control mb-2" type="text" name="bairro" value={formEdicao.bairro} onChange={handleChange} />

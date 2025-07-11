@@ -58,17 +58,17 @@ function Cadastro() {
         <h2 className='titulo'>Cadastro</h2>
 
         <form onSubmit={handleSubmit}>
-          <input type="file" name="imagem" onChange={handleChange} />
-          <input type="text" name="nome" placeholder="Seu nome completo" required onChange={handleChange} />
-          <input type="email" name="email" placeholder="Seu email" required onChange={handleChange} />
-          <input type="password" name="senha" placeholder="Sua senha" required onChange={handleChange} />
-          <input type="number" name="idade" placeholder="Sua idade" required onChange={handleChange} />
+          <input className="input-cadastro" type="file" name="imagem" onChange={handleChange} />
+          <input className="input-cadastro" type="text" name="nome" placeholder="Seu nome completo" required onChange={handleChange} />
+          <input className="input-cadastro" type="email" name="email" placeholder="Seu email" required onChange={handleChange} />
+          <input className="input-cadastro" type="password" name="senha" placeholder="Sua senha" required onChange={handleChange} />
+          <input className="input-cadastro" type="number" name="idade" placeholder="Sua idade" required onChange={handleChange} />
           <div className="div-informacoes">
-            <input type="text" name="estado" placeholder="Estado" required onChange={handleChange} />
-            <input type="text" name="bairro" placeholder="Bairro" required onChange={handleChange} />
-            <input type="text" name="rua" placeholder="Rua" required onChange={handleChange} />
+            <input className="input-cadastro" type="text" name="estado" placeholder="Estado" required onChange={handleChange} />
+            <input className="input-cadastro" type="text" name="bairro" placeholder="Bairro" required onChange={handleChange} />
+            <input className="input-cadastro" type="text" name="rua" placeholder="Rua" required onChange={handleChange} />
           </div>
-          <textarea name="biografia" placeholder="Biografia" onChange={handleChange}></textarea>
+          <input className="input-cadastro"  name="biografia" placeholder="Biografia" onChange={handleChange} />
           <div className="btn-enviar">
             <input type="submit" value="Enviar" className="submit" />
           </div>

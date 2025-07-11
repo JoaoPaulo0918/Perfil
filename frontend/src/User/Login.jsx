@@ -38,8 +38,8 @@ function Login() {
     }
 
     return (
-        <div className="container-fluid mt-5">
-            <form onSubmit={handleSubmit} className="col-md-4 mx-auto">
+        <div className="div-login mt-5">
+            <form onSubmit={handleSubmit} className="formulario-login">
                 <h1 className="mb-4">Login</h1>
                 <div className="div-input mb-3">
                     <input type="email" name="email"

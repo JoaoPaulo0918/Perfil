@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import imagens from "./assets/img";
+import './Navbar.css';
+import imagens from './assets/img';
+
 
 function Navbar() {
   const navigate = useNavigate();
@@ -14,36 +16,39 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg ">
-      {token ? (
-        <Link className="navbar-brand text-light" to="/perfil">
-          <img src={imagens.logoPerfil} alt="" className="logo"/>
-        </Link>
-      ) : (
-        <Link className="navbar-brand text-light" to="/">SistemaUsuario</Link>
-      )}
+    <nav className="navbar">
+      <div className="div-perfil">
+        {token ? (
+          <Link to="/perfil">
+            <img src={imagens.logoPerfil} alt="" className="img-logo"/>
+          </Link>
+        ) : (
+          <Link to="/" className="link-logo">SistemaUsuario</Link>
+        )}
+      </div>
 
-      <div className="collapse navbar-collapse">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <div className="div-main-navbar">
+        <ul className="ul-navbar">
           {token && (
-            <li className="nav-item">
-              <Link className="nav-link text-light" to="/perfil">Perfil</Link>
+            <li className="links">
+              <Link to="/perfil" className="link-perfil">Perfil</Link>
             </li>
           )}
           {!token && (
             <>
-              <li className="nav-item">
-                <Link className="nav-link text-light" to="/login">Login</Link>
+              <li>
+                <Link to="/login" className="links-acessos">Login</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link text-light" to="/cadastro">Cadastro</Link>
+              <li >
+                <Link to="/cadastro" className="links-acessos">Cadastro</Link>
               </li>
             </>
           )}
         </ul>
 
         {token && (
-          <button className="btn btn-outline-light" onClick={handleLogout}>
+          <button className="btn btn-danger" onClick={handleLogout}>
             Sair
           </button>
         )}

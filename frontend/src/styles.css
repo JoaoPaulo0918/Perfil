@@ -8,40 +8,16 @@
 
 body{
     background-color: #241313;
-    height: 100dvh;
-}
-
-.flex{
-    display: flex;
-}
-
-
-.navbar-expand-lg{
-    top: 0 !important;
-    background-color: #3d3d3d;
-    width: 100%;
-    padding: 10px 4% !important;
-    position: fixed !important;
-    display: flex;
-    align-items: center;
-}
-
-.nav-link, .navbar-brand{
-    color: #ffff !important;
-}
-
-.logo{
-  margin-right: -15px;
-  margin-top: -4px;
+    height: 100vh;
 }
 
 
 /*Estilo formulário*/
 
-section.formulario{
+.formulario{
+    width: 100vw;
+    height: 100vh;
     padding: 20px 4%;
-    margin-top: 120px;
-    
 }
 
 form{
@@ -53,7 +29,7 @@ form{
     gap: 10px;
 }
 
-form input, textarea{
+input, area{
     width: 60%;
     border: 0;
     outline: 0;
@@ -88,3 +64,55 @@ form input, textarea{
     transform: scale(1.05);
 }
 
+
+/*Parte mobile*/
+
+@media screen and (max-width: 412px) {
+    .formulario{
+        box-shadow: 1px 1px 1px #ffffff;
+        width: 100%;
+        height: 100vh;
+        gap: 40px;
+        margin-top: 5rem;
+        display: flex;
+        text-align: center;
+        padding: 0 2%;
+    }
+
+    .interface{
+        height: 100vh;
+    }
+
+    form{
+        padding: 10px 3% !important;
+        height: 100vh;
+        display: flex;
+        margin-top: 0 !important;
+    }
+
+    .input-cadastro, area{
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .div-informacoes{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input{
+        height: 3.8rem;
+    }
+
+    .btn-enviar{
+        width: 100%;
+        height: 5rem;
+        margin-top: 1rem;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
